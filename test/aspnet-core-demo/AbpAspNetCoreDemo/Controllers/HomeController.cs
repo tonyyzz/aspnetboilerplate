@@ -9,6 +9,7 @@ namespace AbpAspNetCoreDemo.Controllers
         public IActionResult Index(string returnUrl = "")
         {
             var islocal = AbpUrlHelper.IsLocalUrl(Request, returnUrl);
+
             return View();
         }
 
